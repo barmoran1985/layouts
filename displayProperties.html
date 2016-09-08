@@ -1,0 +1,74 @@
+displayProperties.html
+box.html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>displayProperties</title>
+        <style type="text/css">
+            #container {
+			     margin-right: auto; /*Auto margins used for centering elements*/
+			     margin-left: auto; /*See previous topic*/
+			     width: 960px;
+			     padding: 10px;
+			     border-radius: 10px;
+			     font-size: 0;
+				}
+			.box {
+				padding-top: 20px;
+				box-sizing: border-box;
+				width: 100%;
+				height: 150px;
+				background-color: #81BBC9;
+				margin-bottom: 10px;
+				display: block;
+				border-radius: 10px;
+				font-size: 20px;
+				text-align: center;
+				
+				
+			}
+			#sideBar{
+				padding: 40px;
+				display: inline-block;
+				width: 49.35%;
+				height: 360px;
+				margin-right: 10px;
+				box-sizing: border-box;
+
+				
+			}
+			#content{
+				padding: 40px;
+				display: inline-block;
+				height: 360px;
+				width: 49.35%;
+				box-sizing: border-box;
+
+			}
+			#footer{
+				display: inline-block;
+			}
+
+			
+        </style>
+    </head>
+    <body>
+     	<div id="container">
+     		<div class="box">
+     		<h1>Header</h1>
+     		</div>
+     		<div class="box" id="sideBar">
+     		<h2>Sidebar</h2>
+     		<p>What are all those hyphens and letters on the box-sizing property? The entire CSS3 specification is not fully signed off (i.e it’s not finished), which is troublesome for the browsers trying to support the new features. The browsers, therefore, implement the features in their own way using vendor prefixes until sometime in the future when the entire </p>
+     		</div>
+     		<div class="box" id="content">
+     		<h2>Content</h2>
+     		<p>What are all those hyphens and letters on the box-sizing property? The entire CSS3 specification is not fully signed off (i.e it’s not finished), which is troublesome for the browsers trying to support the new features. The browsers, therefore, implement the features in their own way using vendor prefixes until sometime in the future when the entire </p>
+     		</div>
+     		<div class="box" id="footer"><h2>Footer</h2></div>
+     	</div>
+
+
+    </body>
+</html>
