@@ -7,12 +7,12 @@ box.html
         <title>displayProperties</title>
         <style type="text/css">
             #container {
-			     margin-right: auto; /*Auto margins used for centering elements*/
-			     margin-left: auto; /*See previous topic*/
-			     width: 960px;
-			     padding: 10px;
-			     border-radius: 10px;
-			     font-size: 0;
+			    margin-right: auto; /*Auto margins used for centering elements*/
+			    margin-left: auto; /*See previous topic*/
+			    width: 960px;
+			    padding: 10px;
+			    border-radius: 10px;
+			    font-size: 0;
 				}
 			.box {
 				padding-top: 20px;
@@ -35,8 +35,15 @@ box.html
 				height: 360px;
 				margin-right: 10px;
 				box-sizing: border-box;
+				position: relative;
 
 				
+			}
+			#sideBar p{
+				text-align: left;
+			}
+			#content p{
+				text-align: left;
 			}
 			#content{
 				padding: 40px;
@@ -44,31 +51,49 @@ box.html
 				height: 360px;
 				width: 49.35%;
 				box-sizing: border-box;
+				position: relative;
 
 			}
 			#footer{
 				display: inline-block;
 			}
-
+			#linkToTop{
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+			}
+			#sideLinkToTop{
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+			}
+			p{
+				margin-bottom: 50px;
+			}
 			
         </style>
     </head>
     <body>
      	<div id="container">
      		<div class="box">
-     		<h1>Header</h1>
+     			<h1>Header</h1>
      		</div>
      		<div class="box" id="sideBar">
-     		<h2>Sidebar</h2>
-     		<p>What are all those hyphens and letters on the box-sizing property? The entire CSS3 specification is not fully signed off (i.e it’s not finished), which is troublesome for the browsers trying to support the new features. The browsers, therefore, implement the features in their own way using vendor prefixes until sometime in the future when the entire </p>
+     			<h2>Sidebar</h2>
+     			<p>What are all those hyphens and letters on the box-sizing property? The entire CSS3 specification is not fully signed off (i.e it’s not finished), which is troublesome for the browsers trying to support the new features. The browsers, therefore, implement the features in their own way using vendor prefixes until sometime in the future when the entire 
+     			</p>
+       			<img id= sideLinkToTop src="https://drive.google.com/file/d/0B7ag5fmjYXqQcXBNR01nOGs4a3c/view?usp=drivesdk">
      		</div>
+     		
      		<div class="box" id="content">
-     		<h2>Content</h2>
-     		<p>What are all those hyphens and letters on the box-sizing property? The entire CSS3 specification is not fully signed off (i.e it’s not finished), which is troublesome for the browsers trying to support the new features. The browsers, therefore, implement the features in their own way using vendor prefixes until sometime in the future when the entire </p>
+     			<h2>Content</h2>
+      			<p>What are all those hyphens and letters on the box-sizing property? The entire CSS3 specification is not fully signed off (i.e it’s not finished), which is troublesome for the browsers trying to support the new features. The browsers, therefore, implement the features in their own way using vendor prefixes until sometime in the future when the entire 
+      			</p>
+       			<img id= linkToTop src="https://drive.google.com/file/d/0B7ag5fmjYXqQcXBNR01nOGs4a3c/view?usp=drivesdk">
      		</div>
-     		<div class="box" id="footer"><h2>Footer</h2></div>
+     		<div class="box" id="footer">
+     			<h2>Footer</h2>
+     		</div>
      	</div>
-
-
     </body>
 </html>
